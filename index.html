@@ -2,39 +2,47 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/sript.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/sript.js"defer></script>
 
-    <title>Frontend Mentor | Composant d'évaluation interactif</title>
+  <title>Frontend Mentor | Composant d'évaluation interactif</title>
 </head>
 
 <body>
+  <div class="rating-container">
+  <h2>How did we do?</h2>
+    <p>Please let us know how we did with your support request.</p>
 
-    <div class="rating-container">
-        <h2>How did we do?</h2>
-        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-
-        <div class="rating-stars">
-            <span class="rating-star" data-rating="1">1</span>
-            <span class="rating-star" data-rating="2">2</span>
-            <span class="rating-star" data-rating="3">3</span>
-            <span class="rating-star" data-rating="4">4</span>
-            <span class="rating-star" data-rating="5">5</span>
-        </div>
-
-        <button class="submit-button">Submit</button>
+    <div class="rating-stars">
+      <span class="rating-star" data-rating="1">1</span>
+      <span class="rating-star" data-rating="2">2</span>
+      <span class="rating-star" data-rating="3">3</span>
+      <span class="rating-star" data-rating="4">4</span>
+      <span class="rating-star" data-rating="5">5</span>
     </div>
 
-    <div class="thank-you-card hidden">
-      <p>You selected <span class="selected-rating"></span> out of 5</p>
-      <p>Thank you!<br>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    <button class="submit-button">Submit</button>
   </div>
-  
-  
-  
+
+  <div class="ThankYouCard">
+    <div class="rating-summary">
+
+    </div>
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <button class="selected-rating-button">
+      <h3> You selected <span class="selected-rating"></span> out of 5</h3>
+    </button>
+    <h4><span>Thank you!</span></h4><br><p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </div>
+
+
+
+
+
 
 </body>
 

@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const ratingContainer = document.querySelector('.rating-container');
     const ratingStars = document.querySelectorAll('.rating-star');
     const submitButton = document.querySelector('.submit-button');
-    const thankYouCard = document.querySelector('.thank-you-card');
+    const thankYouCard = document.querySelector('.ThankYouCard');
+    const ratingSummary = document.querySelector('.rating-summary');
     const selectedRatingElement = document.querySelector('.selected-rating');
 
     ratingStars.forEach(star => {
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showThankYouCard(rating) {
         ratingContainer.style.display = 'none';
-        thankYouCard.classList.remove('hidden'); // Afficher l'élément de remerciement
+        thankYouCard.classList.remove('hidden');
         selectedRatingElement.textContent = rating;
     }
 
@@ -26,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Vous pouvez ajouter une logique de soumission ici si nécessaire
     }
 });
+
+
 
 
 
