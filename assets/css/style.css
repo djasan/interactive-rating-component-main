@@ -1,0 +1,134 @@
+/* Réinitialisation des styles de base */
+body,
+h1,
+
+p,
+ul,
+li {
+
+    color: antiquewhite;
+    
+}
+
+/* Styles pour le titre h2 */
+h2 {
+    display: flex;
+    color: antiquewhite;
+    margin-right: 128px;
+    text-align: left;
+
+    /* Aligner le texte à gauche */
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%)
+}
+
+/* Conteneur principal */
+.rating-container {
+    border-radius: 20px;
+    max-width: 375px;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 60px;
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centre verticalement */
+    align-items: center;
+    /* Centre horizontalement */
+}
+
+/* Styles pour les étoiles d'évaluation */
+.rating-stars {
+    display: flex;
+    gap: 40px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.rating-star {
+
+    color: #fff;
+    /* Couleur du chiffre */
+    background-color: hsl(216, 12%, 54%);
+    /* Couleur du cercle gris */
+
+    border-radius: 60px;
+    padding: 10px;
+    /* Ajustez selon vos besoins */
+}
+
+/* Styles pour le bouton de soumission */
+.submit-button {
+    padding: 10px 20px;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles pour l'élément qui s'ouvre lorsqu'on clique */
+.thankYouCard {
+    border-radius: 20px;
+    max-width: 375px;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 60px;
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centre verticalement */
+    align-items: center;
+    /* Centre horizontalement */
+    z-index: 1000;
+}
+
+
+
+/* Styles pour le lien d'attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+    color: hsl(228, 45%, 44%);
+}
+
+/* Styles de typographie */
+body {
+    font-size: 15px;
+    /* Taille du texte de paragraphe */
+}
+
+.thank-you-card {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Media query pour les écrans de bureau */
+@media (min-width: 1440px) {
+    .rating-container {
+
+        max-width: 1440px;
+    }
+}
+
+/* Media query pour les écrans mobiles */
+@media (max-width: 375px) {
+    .rating-container {
+        max-width: 100%;
+        /* La largeur maximale sera celle de l'écran */
+    }
+}
