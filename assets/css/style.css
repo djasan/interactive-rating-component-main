@@ -4,7 +4,6 @@ h4 span {
 }
 
 /* Styles pour le titre h3 */
-
 p {
     color: grey;
     font-size: 15px;
@@ -12,13 +11,10 @@ p {
 }
 
 h3 {
-    
     color: hsl(25, 97%, 53%);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
-    margin: 8px;
-  
-
+    margin: 5px;
 }
 
 body {
@@ -30,8 +26,8 @@ body {
 .rating-container {
     border-radius: 20px;
     max-width: 375px;
-    width: 300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
     margin: 50px auto;
     padding: 60px;
     background-color: hsl(213, 19%, 18%);
@@ -45,12 +41,20 @@ body {
 }
 
 /* Style pour h1 à l'intérieur de .rating-container */
-.rating-container h2 {
+.rating-container h2{
     color: white;
     display: flex;
     font-size: 20px;
     margin-right: 128px;
     text-align: left;
+}
+
+.rating-container img{
+    color: white;
+    display: flex;
+ 
+    margin-right: 245px;
+    
 }
 
 /* Style pour p à l'intérieur de .rating-container */
@@ -61,7 +65,7 @@ body {
 /* Styles pour les étoiles d'évaluation */
 .rating-stars {
     display: flex;
-    gap: 20px;
+    gap: 40px; /* gap to 40px */
     font-size: 14px;
     cursor: pointer;
 }
@@ -69,12 +73,24 @@ body {
 .rating-star {
     color: hsl(0, 0%, 100%);
     /* Couleur du chiffre */
-    background-color: hsl(216, 12%, 54%);
-    /* Couleur du cercle gris */
-    border-radius: 60px;
-    padding: 10px;
-    margin: 10px;
-    /* Ajustez selon vos besoins */
+    position: relative;
+}
+
+.rating-star::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+}
+
+.rating-star:hover::before {
+    background-color: hsl(25, 97%, 53%);
 }
 
 /* Styles pour le bouton de soumission */
@@ -92,8 +108,8 @@ body {
 .ThankYouCard {
     border-radius: 20px;
     max-width: 375px;
-    width: 362px;
-    height: 384px;
+    width: 250px;
+    height: 250px;
     margin: 50px auto;
     padding: 60px;
     background-color: hsl(213, 19%, 18%);
@@ -109,11 +125,10 @@ body {
 
 /* Bouton de notation sélectionné */
 .selected-rating-button {
-
     background-color: hsl(210, 2%, 16%);
     color: hsl(25, 97%, 53%);
     padding: 2px;
-    border-radius: 40px;
+    border-radius: 50%;
     cursor: pointer;
     border: 1px solid hsl(214, 15%, 22%);
     border-radius: 24px;
@@ -121,27 +136,17 @@ body {
     height: 12%;
 }
 
-/* Merci carte */
-.ThankYouCard {
-    background-color: hsl(213, 19%, 18%);
-    color: white;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.ThankYouCard {
-    display: flex;
-}
-
-/* Styling pour le SVG container */
-.svg-container {
-    max-width: 375px;
-    /* Ou la largeur que vous souhaitez */
-    margin: 0 auto;
-    background-color: hsl(213, 19%, 18%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+.rating-star::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
 }
 
 /* Styles pour le lien d'attribution */
